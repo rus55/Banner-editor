@@ -1,0 +1,41 @@
+.title-h1 {
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 735px;
+}
+.download {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.on-click {
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+}
+.otstup {
+    margin-top: 15px;
+    padding: 8px;
+}
+.text {
+    background: #F4F0D9;
+}
+.text2 {
+    background: #D2B18E;
+}
+.fon1 {
+    background: #817474;
+}
+.address-photo {
+    background: #FFE6B7;
+}

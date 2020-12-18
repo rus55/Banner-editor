@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="title-h1">
+    <h1>Приложение-редактор для создания баннеров</h1>
+</div>
+<div id='banner-html' style="position: relative; display: none"></div>
+
+
+
+<div class="wrapper">
+    <div class="download">
+        <canvas id="b" width="400" height="400"></canvas>
+        <a class="on-click" href="#" id="downloader" download="image.png">Сохранить картинку в png!</a>
+
+        <a class="on-click" href="#" id="downloader-html">Скопировать баннер как html!</a>
+        <label style="margin-top: 20px">Ссылка для баннера</label>
+        <input id="ahref" type="text">
+
+        <a class="on-click" href="#" id="downloader-json" onclick="downloadjson();">Скопировать конфигурацию в json!</a>
+    </div>
+    <div class="column">
+        <div class="text otstup">
+            <label>Введите текст 1</label>
+            <input id="text1" type="text">
+            <label>Введите первую координату</label>
+            <input id="text1x" type="text">
+            <label>Введите вторую координату</label>
+            <input id="text1y" type="text">
+            <label>Введите размер текста</label>
+            <select id="fontsize1">
+                <option value="12px">12px</option>
+                <option value="16px">16px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+                <option value="28px">28px</option>
+            </select>
+            <label>Введите цвет фона</label>
+            <select id="textColor1">
+                <option value="#fff">Белый</option>
+                <option value="#000">Черный</option>
+                <option value="#ff0000">Красный</option>
+                <option value="#ffff00">Желтый</option>
+            </select>
+        </div>
+        <div class="text2 otstup">
+            <label>Введите текст 2</label>
+            <input id="text2" type="text">
+            <label>Введите первую координату</label>
+            <input id="text2x" type="text">
+            <label>Введите вторую координату</label>
+            <input id="text2y" type="text">
+            <label>Введите размер текста</label>
+            <select id="fontsize2">
+                <option value="12px">12px</option>
+                <option value="16px">16px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+                <option value="28px">28px</option>
+            </select>
+            <label>Введите цвет текста</label>
+            <select id="textColor2">
+                <option value="#fff">Белый</option>
+                <option value="#000">Черный</option>
+                <option value="#ff0000">Красный</option>
+                <option value="#ffff00">Желтый</option>
+            </select>
+        </div>
+        <div class="fon1 otstup">
+            <label>Введите цвет фона 1</label>
+            <select id="select1">
+                <option value="#fff">Белый</option>
+                <option value="#000">Черный</option>
+                <option value="#ff0000">Красный</option>
+                <option value="#ffff00">Желтый</option>
+            </select>
+            <label>Введите цвет фона 2</label>
+            <select id="select2">
+                <option value="#fff">Белый</option>
+                <option value="#000">Черный</option>
+                <option value="#ff0000">Красный</option>
+                <option value="#ffff00">Желтый</option>
+            </select>
+        </div>
+        <div class="address-photo otstup">
+            <label>Введите адрес картинки</label>
+            <input id="photo" type="extColor1">
+
+            <label>Введите первую координату картинки</label>
+            <input id="coordinatesImgX" type="text">
+            <label>Введите вторую координату картинки</label>
+            <input id="coordinatesImgY" type="text">
+
+
+            <label>Введите ширину картинки</label>
+            <input id="widthPhoto" type="text">
+            <label>Введите высоту картинки</label>
+            <input id="heightPhoto" type="text">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
