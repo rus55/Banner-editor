@@ -1,1 +1,1 @@
-В ветке master смотрите проект
+See the project in the master branch
